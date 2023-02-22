@@ -1,0 +1,297 @@
+body {
+  background: #e5e5fd;
+  font-family: 'Ubuntu', sans-serif;
+}
+@font-face {
+  font-family: cubic;
+  src: url(/font/cubic.ttf);
+}
+.alert{
+  visibility: hidden;
+}
+.navbar-brand{
+  font-family: cubic;
+  font-size: 22px;
+  margin-right: 5px;
+}
+.brand-icon{
+ height: 35px;
+  margin-right: 8px;
+}
+.brand{
+  width: 10rem;
+  margin: -10px;
+}
+
+.cde{
+  color: red;
+}
+.dot{
+  font-family: "Poppins",sans-serif;
+}
+
+.ibg,.i{
+  color: #21309b;
+}
+.i{
+  font-family: "Poppins",sans-serif;
+  padding: 0 2px;
+  font-size: 16px;
+}
+.navbar-toggler{
+  position: relative;
+    left: 7px;
+}
+.contact-form{
+  width: 100vw;
+  height: 100vh;
+}
+.tagLine{
+  font-size: 40px;
+}
+h1, h2{
+  font-family: "Poppins", sans-serif;;
+}
+.card{
+  background-color: #ffffff7a;
+  border: none;
+  border-radius: 15px;
+  text-decoration: none;
+  color: black;
+}
+.card:hover{
+  color: red;
+  /* opacity: 85%; */
+  background-color: lavender;
+}
+.card:hover img{
+  /* height: 22rem;
+  width: 22rem; */
+  mix-blend-mode:difference;
+}
+.accordion-header{
+  background:  none;
+}
+.accordion-item{
+  background: none;
+}
+.accordion-button{
+  background: ghostwhite;
+}
+.tmt{
+  color: blue;
+}
+.tab-content h4{
+  color: #dc3545;
+}
+.tab-content p{
+  line-height: 21px;
+  margin-bottom: 7px;
+}
+.pages p{
+  line-height: 21px;
+  margin-bottom: 7px;
+}
+.list-group li a{
+  text-decoration: none;
+  color: black;
+}
+.list-group li a:hover{
+  color: rgb(0, 117, 251);
+}
+.nav-item a{
+  font-family: 'Ubuntu', sans-serif;
+}
+.nav-pills .nav-link{
+  padding: 8px 12px;
+}
+.page-header{
+  font-size: 22px;
+  margin-top: 15px;
+}
+.code-wrapper {
+  position: relative;
+}
+
+.code-wrapper pre {
+  background-color: #071e3d;
+  color: white;
+  padding: 8px 20px;
+  border-radius: 10px;
+}
+#copy-button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  padding: 7px;
+  background-color: whitesmoke;
+  outline: none;
+  color: black;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+  opacity: 0;
+  border: 1px solid antiquewhite;
+}
+#copy-button.show-msg{
+    display: none;
+}
+#copy-button:hover {
+  background-color: yellow;
+  color: black;
+}
+.code-wrapper:hover #copy-button {
+  opacity: 1;
+}
+code[class*="language-"],
+pre[class*="language-"] {
+	color: #ccc;
+	background: none;
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	font-size: 1em;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+
+}
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+}
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: #2d2d2d;
+}
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+	white-space: normal;
+}
+.token.comment,
+.token.block-comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: #999;
+}
+.token.punctuation {
+	color: #ccc;
+}
+.token.tag,
+.token.attr-name,
+.token.namespace,
+.token.deleted {
+	color: #e2777a;
+}
+.token.function-name {
+	color: #6196cc;
+}
+
+.token.boolean,
+.token.number,
+.token.function {
+	color: #f08d49;
+}
+.token.property,
+.token.class-name,
+.token.constant,
+.token.symbol {
+	color: #f8c555;
+}
+.token.selector,
+.token.important,
+.token.atrule,
+.token.keyword,
+.token.builtin {
+	color: #cc99cd;
+}
+.token.string,
+.token.char,
+.token.attr-value,
+.token.regex,
+.token.variable {
+	color: #7ec699;
+}
+.token.operator,
+.token.entity,
+.token.url {
+	color: #67cdcc;
+}
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+
+.token.inserted {
+	color: green;
+}
+
+.pagination{
+  padding: 4px;
+}
+
+    /* MEDIA QUERY */
+
+@media screen and (max-width: 767px)
+{
+
+  .alert-dismissible .btn-close{
+    position: relative;
+    padding: 0 0.5rem;
+  }
+
+  .alert svg{
+    height: 35px;
+  }
+  .notice{
+    font-size: 14px;
+  }
+
+.nav-pills .nav-link{
+    padding: 5px 10px;
+  }
+  .tagLine{
+    font-size: 25px;
+  }
+
+  .card{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 20rem;
+    margin: auto;
+  }
+  .card img{
+    width: 5rem;
+    margin-left: 10px;
+  }
+  .col{
+    margin-top: 0.9rem;
+  }
+  .card-body h3{
+    margin-bottom: 0;
+    font-size: 22px;
+  }
+}

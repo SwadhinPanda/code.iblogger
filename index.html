@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Code.iBlogger provides programming concept and practical files"
+    />
+    <meta
+      name="keywords"
+      content="Programming, Computer Science, CSPCB, Code.iBlogger, Program Files"
+    />
+    <meta name="author" content="Swadhin Panda" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alegreya:wght@600&family=Ceviche+One&family=Fredoka+One&family=Josefin+Slab:wght@600&family=Merriweather:ital@1&family=Montserrat:ital,wght@0,600;1,800&family=Poppins:wght@700&family=Ubuntu:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" src="/script/template.js"></script>
+    <link rel="stylesheet" href="/style/style.css" />
+    <link rel="icon" type="image/x-icon" href="/img/fav.ico" />
+    <title>Code.iBlogger</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg" id="navSection">
+      <div class="mx-4 container-fluid">
+        <img src="/img/icon.webp" alt="brand-icon" class="brand-icon" />
+        <a class="navbar-brand mx-1 fw-bold" href="#"
+          ><span class="cde">Code</span><span class="dot">.</span
+          ><span class="i">i</span><span class="ibg">Blogger</span></a
+        >
+        <button
+          class="navbar-toggler"
+          id="nav-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-center">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                id="activeSection"
+                aria-current="page"
+                href="/"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/syllabus.html" target="_blank"
+                >Syllabus</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#subjects">Subjects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#faq">FAQs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="policy.html">Policy</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- ALERT NOTICE FOR UNDER DEVELOPEMENT -->
+    <div class="container-fluid">
+      <div
+        class="alert alert-danger alert-dismissible fade show p-2 mb-0 align-items-center d-flex"
+        role="alert"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="50"
+          height="25"
+          fill="currentColor"
+          class="bi flex-shrink-0"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"
+          />
+        </svg>
+        <div class="notice mx-2">
+          <strong>Notice !</strong> "Code.iBlogger.org" is not completely
+          developed. Some functions may not work
+        </div>
+        <button
+          type="button"
+          class="btn-close pt-2"
+          data-bs-dismiss="alert"
+          aria-label="Close"
+        ></button>
+      </div>
+    </div>
+    <!-- Hero Section -->
+    <div class="container col-xxl-8 px-4 py-2" id="myDiv">
+      <div
+        class="row flex-lg-row-reverse align-items-center justify-content-center g-5 py-5"
+      >
+        <div class="col-10 col-sm-8 col-lg-6">
+          <img
+            src="/img/programmer.webp"
+            class="d-block mx-lg-auto img-fluid"
+            alt="prgrammer vector"
+            width="500"
+            height="500"
+            loading="lazy"
+          />
+        </div>
+        <div class="col-lg-6">
+          <h1 class="display-5 fw-bold lh-1 mb-1 tagLine">
+            More Subjects One Place
+          </h1>
+          <h3 class="text-secondary mb-3 fs-5">
+            Get all program files free of cost
+          </h3>
+          <p class="lead">
+            <span class="fw-bold text-danger">Code.iBlogger</span> provides
+            compiled programs with simple algorithm. Learn programming language
+            and other subjects of Computer Science
+            <span class="text-muted" id="text-muted"
+              >Panchayat College, Bargarh</span
+            >
+          </p>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+            <button
+              type="button"
+              class="btn btn-warning btn-lg px-4 me-md-2"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              More about Code.iBlogger
+            </button>
+          </div>
+          <div
+            class="modal fade"
+            id="exampleModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">
+                    Consent
+                  </h1>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  By surfing this website you are accepting our
+                  <a href="/policy.html"> rule and regulation</a> and copyright
+                  <a href="/policy.html">consent</a>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                  <a href="/about.html">
+                    <button type="button" class="btn btn-primary">
+                      Go to About
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Courses Section ALBUM Class -->
+    <div class="album py-5" id="subjects">
+      <div class="container">
+        <div>
+          <h2 class="text-center mb-4">Subjects</h2>
+        </div>
+        <div
+          class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4"
+          id="cardElement"
+        >
+          <!-- C Language Card -->
+          <div class="col">
+            <a href="/coming.html" class="card">
+              <div class="card shadow">
+                <img src="/img/c1.webp" alt="C-Logo" />
+                <div class="card-body">
+                  <h3 class="text-center">C Programming</h3>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- Digita Logic Card -->
+          <div class="col">
+            <a href="/coming.html" class="card">
+              <div class="card shadow">
+                <img class="" src="/img/dl1.webp" alt="Digital Logic Logo" />
+                <div class="card-body">
+                  <h3 class="text-center">Digital Logic</h3>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- C++ Language Card -->
+          <div class="col">
+            <a href="/coming.html" class="card">
+              <div class="card shadow">
+                <img class="" src="/img/cpp1.webp" alt="C++ Logo" />
+                <div class="card-body">
+                  <h3 class="text-center">C++ Programming</h3>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- Data Structures Card -->
+          <div class="col">
+            <a class="card" href="/coming.html">
+              <div class="card shadow">
+                <img class="" src="/img/ds12.webp" alt="Data Structures Logo" />
+                <div class="card-body">
+                  <h3 class="text-center">Data Structures</h3>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- Java Language Card -->
+          <div class="col">
+            <a class="card" href="/coming.html">
+              <div class="card shadow">
+                <img class="" src="/img/java1.webp" alt="Java Logo" />
+                <div class="card-body">
+                  <h3 class="text-center">Java Programming</h3>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- Discrete Math Card -->
+          <div class="col">
+            <a href="/coming.html" class="card">
+              <div class="card shadow">
+                <img class="" src="/img/dm11.webp" alt="Discrete Maths Logo" />
+                <div class="card-body">
+                  <h3 class="text-center">Discrete Maths</h3>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- DBMS Card -->
+          <div class="col">
+            <a href="/coming.html" class="card">
+              <div class="card shadow">
+                <img class="" src="/img/mysql.webp" alt="MySQL Logo" />
+                <div class="card-body">
+                  <h3 class="text-center">Database Systems</h3>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- OS Card -->
+          <div class="col">
+            <a href="/coming.html" class="card">
+              <div class="card shadow">
+                <img class="" src="/img/os.webp" alt="OS Logo" />
+                <div class="card-body">
+                  <h3 class="text-center">Operating Systems</h3>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- Networks Card -->
+          <div class="col">
+            <a href="/coming.html" class="card">
+              <div class="card shadow">
+                <img class="" src="/img/cn.webp" alt="Computer Networks Logo" />
+                <div class="card-body">
+                  <h3 class="text-center">Computer Network</h3>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- Graphics Card -->
+          <div class="col">
+            <a href="/coming.html" class="card">
+              <div class="card shadow">
+                <img class="" src="/img/cg.webp" alt="Computer Graphics Logo" />
+                <div class="card-body">
+                  <h3 class="text-center">Computer Graphics</h3>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Accordion Section -->
+    <div class="container px-5" id="faq">
+      <h2 class="text-center">FAQs</h2>
+      <div class="accordion shadow" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseOne"
+              aria-expanded="true"
+              aria-controls="collapseOne"
+            >
+              Is the platform free to use?
+            </button>
+          </h2>
+          <div
+            id="collapseOne"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <strong>Absolutely Free!</strong> Code.iBlogger is basically codes
+              providing website along with basics of programming language.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo"
+              aria-expanded="false"
+              aria-controls="collapseTwo"
+            >
+              Does this site has vscode-type preview of codes?
+            </button>
+          </h2>
+          <div
+            id="collapseTwo"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingTwo"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <strong>Yes!</strong> <span class="tmt"> Code.iBlogger</span> has
+              <span class="text-danger">colored</span> theme code viewer. All
+              <span class="text-primary">tokens</span> are different in
+              <span class="text-danger">color</span>.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseThree"
+              aria-expanded="false"
+              aria-controls="collapseThree"
+            >
+              Can user get downloadable program files?
+            </button>
+          </h2>
+          <div
+            id="collapseThree"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingThree"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <strong>User can download </strong> program file in
+              <code class="fs-6 fw-bold"> .txt /.c /.cpp /.java</code> etc
+              formats. <span class="text-muted fs-6">w.r.t type of file</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer Section -->
+    <my-footer></my-footer>
+  </body>
+</html>

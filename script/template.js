@@ -187,3 +187,38 @@ class MyFooter extends HTMLElement{
     }
 }
 customElements.define('my-footer', MyFooter)
+
+class JavaGoto extends HTMLElement{
+  connectedCallback(){
+    this.innerHTML = `
+    <div class="goto-links">
+        <h6>Go to Program No.</h6>
+        <div>
+          <a href="java1.html">1</a>
+          <a href="java2.html">2</a>
+          <a href="java3.html">3</a>
+          <a href="java4.html">4</a>
+          <a href="java5.html">5</a>
+          <a href="java6.html">6</a>
+          <a href="java7.html">7</a>
+          <a href="java8.html">8</a>
+          <a href="java9.html">9</a>
+          <a href="java10.html">10</a>
+          <a href="java11.html">11</a>
+          <a href="java12.html">12</a>
+        </div>
+          <div>
+            
+          <a href="java13.html">13</a>
+          <a href="java14.html">14</a>
+          <a href="java15.html">15</a>
+          <a href="java16.html">16</a>
+          <a href="java17.html">17</a>
+          <a href="java18.html">18</a>
+          <a href="java19.html">19</a>
+          <a href="java20.html">20</a>
+        </div>
+      </div>`
+  }
+}
+customElements.define('java-go', JavaGoto)

@@ -109,6 +109,18 @@ h1, h2{
   font-size: 22px;
   margin-top: 15px;
 }
+.quote{
+  margin-top: 1rem;
+  background: wheat;
+  width: fit-content;
+  border-radius: 1rem;
+}
+.quote img{
+  width: 5rem;
+}
+.quote h2{
+  padding-top: 3rem;
+}
 .code-wrapper {
   position: relative;
 }

@@ -222,3 +222,39 @@ class JavaGoto extends HTMLElement{
   }
 }
 customElements.define('java-go', JavaGoto)
+
+
+class CGoto extends HTMLElement{
+  connectedCallback(){
+    this.innerHTML = `
+    <div class="goto-links">
+        <h6>Go to Program No.</h6>
+        <div>
+          <a href="c1.html">1</a>
+          <a href="c2.html">2</a>
+          <a href="c3.html">3</a>
+          <a href="c4.html">4</a>
+          <a href="c5.html">5</a>
+          <a href="c6.html">6</a>
+          <a href="c7.html">7</a>
+          <a href="c8.html">8</a>
+          <a href="c9.html">9</a>
+          <a href="c10.html">10</a>
+          <a href="c11.html">11</a>
+          <a href="c12.html">12</a>
+        </div>
+          <div>
+            
+          <a href="c13.html">13</a>
+          <a href="c14.html">14</a>
+          <a href="c15.html">15</a>
+          <a href="c16.html">16</a>
+          <a href="c17.html">17</a>
+          <a href="c18.html">18</a>
+          <a href="c19.html">19</a>
+          <a href="c20.html">20</a>
+        </div>
+      </div>`
+  }
+}
+customElements.define('c-go', CGoto)

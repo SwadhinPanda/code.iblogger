@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@500&family=Poppins:wght@600;700&family=Ubuntu:wght@500&display=swap"
+	 rel="stylesheet" />
+    <link rel="stylesheet" href="/style/style.css" />
+    <script type="module" src="/script/template.js"></script>
+    <script src="/script/main.js" defer></script>
+    <script src="/script/prism.js"></script>
+    <link rel="icon" type="image/x-icon" href="/img/c1.webp" />
+    <title>C Program - Copy the content of one file to other</title>
+  </head>
+  <body>
+    <my-header></my-header>
+
+    <!-- container box -->
+
+    <div class="container px-4 pt-5 bg-light bg-opacity-75 rounded-3">
+      <!-- Breadcrumb Section -->
+
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="/">Home</a></li>
+          <li class="breadcrumb-item"><a href="/subject/C/">C</a></li>
+          <li class="breadcrumb-item active" aria-current="page">
+            Write a program to copy the content of one file to other
+          </li>
+        </ol>
+      </nav>
+
+      <!-- Code Section -->
+
+      <div class="container">
+        <h3>Program No.20</h3>
+       <a
+          href="codes/c20.txt"
+          type="button"
+          class="btn btn-sm btn-outline-danger my-3"
+          download=""
+        >
+          Download <span class="fw-bold">.txt</span>
+        </a>
+
+        <div class="code-wrapper pb-2">
+          <pre>
+            <code id="code" class="language-css">
+                        #include &lt;stdio.h&gt;
+                       #include &lt;stdlib.h&gt;
+                    
+                        int main() {
+                        FILE *source_file, *target_file;
+                        char source_name[100], target_name[100];
+                        char c;
+                    
+                        printf("Enter the name of the source file: ");
+                        scanf("%s", source_name);
+                    
+                        source_file = fopen(source_name, "r");
+                    
+                        if (source_file == NULL) {
+                            printf("Unable to open source file!\n");
+                            exit(1);
+                        }
+                    
+                        printf("Enter the name of the target file: ");
+                        scanf("%s", target_name);
+                    
+                        target_file = fopen(target_name, "w");
+                    
+                        if (target_file == NULL) {
+                            printf("Unable to create target file!\n");
+                            fclose(source_file);
+                            exit(1);
+                        }
+                    
+                        while ((c = fgetc(source_file)) != EOF) {
+                            fputc(c, target_file);
+                        }
+                    
+                        printf("File copied successfully.\n");
+                    
+                        fclose(source_file);
+                        fclose(target_file);
+                    
+                        return 0;
+                       }           
+         </code>
+          </pre>
+          <button id="copy-button">Copy</button>
+        </div>
+
+        <h3>Output:</h3>
+        <div class="code-wrapper pb-3">
+          <pre>
+          <code class="language-css">
+           Enter the name of the source file: source.txt
+           Enter the name of the target file: target.txt
+           File copied successfully.   
+          </code>
+          </pre>
+        </div>
+      </div>
+      <c-go></c-go>
+    </div>
+    <my-footer></my-footer>
+  </body>
+</html>

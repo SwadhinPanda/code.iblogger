@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <meta name="description" content="How to write a functionthat checks whether a given string is Palindrome or not using C language with step by step procedure to write program. Written by Code iBlogger aka Swadhin Panda" />
+	<meta name="keywords" content="Palindrome String, c program, String Palindrome in c, c function to check string whether palindrome or not" />
+	<meta name="author" content="Swadhin Panda" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+   <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@500&family=Poppins:wght@600;700&family=Ubuntu:wght@500&display=swap"
+	 rel="stylesheet" />
+    <link rel="stylesheet" href="/style/style.css" />
+    <script type="module" src="/script/template.js"></script>
+    <script src="/script/main.js" defer></script>
+    <script src="/script/prism.js"></script>
+    <link rel="icon" type="image/x-icon" href="/img/c1.webp" />
+    <title>C Program - Function that checks whether a given string is Palindrome or not</title>
+  </head>
+  <body>
+    <my-header></my-header>
+
+    <!-- container box -->
+
+    <div class="container px-4 pt-5 bg-light bg-opacity-75 rounded-3">
+      <!-- Breadcrumb Section -->
+
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="/">Home</a></li>
+          <li class="breadcrumb-item"><a href="/subject/c/">C</a></li>
+          <li class="breadcrumb-item active" aria-current="page">
+            Write a function that checks whether a given string is Palindrome or not. Use this function to
+            find whether the string entered by user is Palindrome or not.
+          </li>
+        </ol>
+      </nav>
+
+      <!-- Code Section -->
+
+      <div class="container">
+          <h3>C Program 7</h3>
+        <!-- <div class="procedure">
+          <li>Start by including the necessary header files</li>
+          <li>Declare any variables needed for the program, such as the integer to be analyzed, variables to hold the sum and product of its digits, and variables to hold individual digits</li>
+          <li>Ask the user to enter integer</li>
+          <li>Use a loop to extract each digit of the integer one by one, and update the sum and product accordingly</li>
+          <li>Finally, print the sum and product of the digits</li>
+        </div> -->
+        <a
+          href="codes/c7.txt"
+          type="button"
+          class="btn btn-sm btn-outline-danger my-3"
+          download=""
+        >
+          Download <span class="fw-bold">.txt</span>
+        </a>
+
+        <div class="code-wrapper pb-2">
+          <pre>
+            <code id="code" class="language-css">
+        #include &lt;stdio.h&gt;
+        #include &lt;string.h&gt;
+
+        int isPalindrome(char *str) {
+            int len = strlen(str);
+            for (int i = 0; i &lt; len / 2; i++) {
+                if (str[i] != str[len - i - 1]) {
+                    return 0; 
+                }
+            }
+            return 1; 
+        }
+        
+        int main() {
+            char str[100];
+        
+            printf("Enter a string: ");
+            fgets(str, 100, stdin);
+        
+            if (str[strlen(str) - 1] == '\n') {
+                str[strlen(str) - 1] = '\0';
+            }
+        
+            if (isPalindrome(str)) {
+                printf("%s is a palindrome", str);
+            } else {
+                printf("%s is not a palindrome", str);
+            }
+        
+            return 0;
+        }
+         </code>
+          </pre>
+          <button id="copy-button">Copy</button>
+        </div>
+
+        <h3>Output:</h3>
+        <div class="code-wrapper pb-3">
+          <pre>
+          <code class="language-css">
+            Enter a string: swadhin
+            swadhin is not a palindrome
+
+            Enter a string: eye
+            eye is a palindrome
+          </code>
+          </pre>
+        </div>
+      </div>
+      <c-go></c-go>
+    </div>
+    <my-footer></my-footer>
+  </body>
+</html>

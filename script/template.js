@@ -1,12 +1,10 @@
-class MyHeader extends HTMLElement{
-    connectedCallback(){
+class MyHeader extends HTMLElement {
+    connectedCallback() {
         this.innerHTML = `
-        <nav class="navbar navbar-expand-lg" id="navSection">
-      <div class="mx-4 container-fluid">
-        <img src="/img/icon.png" alt="brand-icon" class="brand-icon" />
-        <a class="navbar-brand mx-1 fw-bold" href="/"
-          ><span class="cde">Code</span><span class="dot">.</span
-          ><span class="i">i</span><span class="ibg">Blogger</span></a
+        <nav class="navbar navbar-expand-lg fixed-top pb-0" id="navSection">
+		<div class="mx-4 container-fluid">
+			<a class="navbar-brand fw-bold" href="#"><span class="cde">Code</span><span class="i">i</span
+          ><span class="ibg">Blogger</span></a
         >
         <button
           class="navbar-toggler"
@@ -17,14 +15,22 @@ class MyHeader extends HTMLElement{
           aria-controls="navbarSupportedContent"
           aria-expanded="false"
           aria-label="Toggle navigation"
+          style="padding: 2px 5px"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span
+            class="navbar-toggler-icon"
+            style="width: 1.5rem; height: 1.5rem"
+          ></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-center">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="/">Home</a>
+              <a
+                class="nav-link"
+                href="/"
+                >Home</a
+              >
             </li>
             <li class="nav-item">
               <a class="nav-link" href="/syllabus.html" target="_blank"
@@ -32,60 +38,34 @@ class MyHeader extends HTMLElement{
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="/#subjects">Subjects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/#faq">FAQs</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/blog.html">Blog</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/policy.html">Policy</a>
+              <a class="nav-link active" href="/subject/">Subjects</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="/about.html">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
+              <a class="nav-link" href="/policy.html">Policy</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contact.html">Contact</a>
             </li>
           </ul>
-          <!-- <form class="d-flex align-items-center">
-            <input
-              class="form-control me-2 bg-light bg-opacity-75"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="30"
-              height="30"
-              fill="currentColor"
-              class="bi bi-search"
-              viewBox="0 0 16 16"
-              type="submit"
-            >
-              <path
-                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
-              />
-            </svg>
-          </form> -->
+
         </div>
       </div>
     </nav>
 
         `
-        
+
     }
 }
 customElements.define('my-header', MyHeader)
 
 
-class MyFooter extends HTMLElement{
-    connectedCallback(){
+class MyFooter extends HTMLElement {
+    connectedCallback() {
         this.innerHTML = `
-        <footer class="py-3 mt-4">
+        <footer class="py-3">
         <ul
           class="nav justify-content-center border-bottom pb-3 mb-3 column-gap-3"
         >
@@ -150,12 +130,12 @@ class MyFooter extends HTMLElement{
               />
             </svg>
           </a>
-  
+    <a href="https://goo.gl/maps/dgJkpe3a55Qk2NHXA" target="_blank">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="22"
             height="22"
-            fill="currentColor"
+            fill="black"
             class="bi bi-geo-alt-fill"
             viewBox="0 0 16 16"
           >
@@ -163,19 +143,8 @@ class MyFooter extends HTMLElement{
               d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"
             />
           </svg>
+    </a>
   
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="22"
-            height="22"
-            fill="currentColor"
-            class="bi bi-share-fill"
-            viewBox="0 0 16 16"
-          >
-            <path
-              d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z"
-            />
-          </svg>
         </ul>
         <p class="text-center mb-0">© 2023 Code.iBlogger</p>
         <p class="text-center text-muted font-monospace mb-1">
@@ -183,14 +152,15 @@ class MyFooter extends HTMLElement{
         </p>
       </footer>
     `
-        
+
     }
 }
 customElements.define('my-footer', MyFooter)
 
-class JavaGoto extends HTMLElement{
-  connectedCallback(){
-    this.innerHTML = `
+
+class JavaGoto extends HTMLElement {
+    connectedCallback() {
+        this.innerHTML = `
     <div class="goto-links">
         <h6>Go to Program No.</h6>
         <div>
@@ -219,7 +189,7 @@ class JavaGoto extends HTMLElement{
           <a href="java20.html">20</a>
         </div>
       </div>`
-  }
+    }
 }
 customElements.define('java-go', JavaGoto)
 

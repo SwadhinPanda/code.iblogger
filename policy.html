@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
- <meta
+    <meta
       name="description"
       content="Code.iBlogger provides programming concept and practical files"
     />
@@ -31,30 +31,35 @@
     />
     <script type="module" src="/script/template.js"></script>
     <link rel="stylesheet" href="/style/style.css" />
-  <link rel="icon" type="image/x-icon" href="/img/fav.ico" />
+    <link rel="icon" type="image/x-icon" href="/img/fav.ico" />
     <title>Privacy Policy - Code.iBlogger</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar navbar-expand-lg fixed-top pb-0" id="navSection">
       <div class="mx-4 container-fluid">
-        <img src="/img/icon.webp" alt="brand-icon" class="brand-icon" />
-        <a class="navbar-brand mx-1 fw-bold" href="/"
-          ><span class="cde">Code</span><span class="dot">.</span
-          ><span class="i">i</span><span class="ibg">Blogger</span></a
+        <a class="navbar-brand fw-bold" href="/"
+          ><span class="cde">Code</span><span class="i">i</span
+          ><span class="ibg">Blogger</span></a
         >
         <button
           class="navbar-toggler"
+          id="nav-toggler"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent"
           aria-expanded="false"
           aria-label="Toggle navigation"
+          style="padding: 2px 5px"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span
+            class="navbar-toggler-icon"
+            style="width: 1.5rem; height: 1.5rem"
+          ></span>
         </button>
+
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-center">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <a class="nav-link" href="/">Home</a>
             </li>
@@ -64,16 +69,13 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/#subjects">Subjects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/#faq">FAQs</a>
+              <a class="nav-link" href="/subject/">Subjects</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="about.html">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Policy</a>
+              <a class="nav-link active" href="policy.html">Policy</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="contact.html">Contact</a>
@@ -82,76 +84,80 @@
         </div>
       </div>
     </nav>
-
-    <div class="container px-4 pt-3 bg-light bg-opacity-75 rounded-3 pages">
+    <div
+      class="container px-5 py-3 bg-light bg-opacity-75 rounded-3 pages"
+    >
       <h2 class="page-header">Privacy and Policy</h2>
       <p>
-        At Code.iBlogger, accessible from www.code.iblogger.org, one of our main
-        priorities is the privacy of our visitors. This Privacy Policy document
-        contains types of information that is collected and recorded by
-        Code.iBlogger and how we use it.
+        At Code.iBlogger, accessible from
+        <a href="https://www.code.iblogger.org">www.code.iblogger.org</a>, we
+        consider the privacy of our visitors a top priority. This Privacy Policy
+        document outlines the types of information collected and recorded by
+        Code.iBlogger and how we utilize it.
       </p>
+      <h2 class="page-header">Scope of the Policy</h2>
       <p>
-        This Privacy Policy applies only to our online activities and is valid
-        for visitors to our website with regards to the information that they
-        shared and/or collect in Code.iBlogger. This policy is not applicable to
-        any information collected offline or via channels other than this
-        website.
+        This Privacy Policy applies exclusively to our online activities and
+        pertains to the information shared and/or collected on Code.iBlogger's
+        website. It does not extend to any offline information collection or
+        data gathered through channels other than this website.
       </p>
       <h2 class="page-header">Consent</h2>
       <p>
-        By using our website, you hereby consent to our Privacy Policy and agree
-        to its Terms and Conditions.
+        By utilizing our website, you express your consent to our Privacy Policy
+        and agree to its Terms and Conditions.
       </p>
       <h2 class="page-header">Log Files</h2>
       <p>
-        Code.iBlogger follows a standard procedure of using log files. These
-        files log visitors when they visit websites. All hosting companies do
-        this and a part of hosting services' analytics. The information
-        collected by log files include internet protocol (IP) addresses, browser
-        type, Internet Service Provider (ISP), date and time stamp,
-        referring/exit pages, and possibly the number of clicks. These are not
-        linked to any information that is personally identifiable. The purpose
-        of the information is for analyzing trends, administering the site,
-        tracking users' movement on the website, and gathering demographic
-        information.
+        Code.iBlogger adheres to standard procedures for log files, which are
+        utilized to record visitor activity on websites. These log files collect
+        data such as internet protocol (IP) addresses, browser types, Internet
+        Service Providers (ISPs), date and time stamps, referring/exit pages,
+        and possibly the number of clicks. It is important to note that this
+        information is not linked to any personally identifiable details. The
+        purpose of this data is to analyze trends, administer the site, track
+        user movement on the website, and gather demographic information.
       </p>
       <h2 class="page-header">Children's Information</h2>
       <p>
-        Another part of our priority is adding protection for children while
-        using the internet. We encourage parents and guardians to observe,
-        participate in, and/or monitor and guide their online activity.
-        Code.iBlogger does not knowingly collect any Personal Identifiable
-        Information from children under the age of 13. If you think that your
-        child provided this kind of information on our website, we strongly
-        encourage you to Contact immediately and we will do our best efforts to
-        promptly remove such information from our records.
+        We are committed to safeguarding children's online experiences. We
+        encourage parents and guardians to actively observe, participate in, and
+        monitor their children's online activities. Code.iBlogger does not
+        knowingly collect Personal Identifiable Information from children under
+        the age of 13. If you suspect that your child has provided such
+        information on our website, we strongly urge you to contact us
+        immediately. We will make every effort to promptly remove such
+        information from our records.
       </p>
-
       <h2 class="page-header">Copyright Disclaimer</h2>
       <p>
-        By using our platform you are strictly restricted from copying our
-        content and using it commercially over the internet or any way. This
-        platform is meant for better future of students and it doesn't allow to
-        mix or fruad. All files and algorithm is owned by Code.iBlogger. If any
-        Copyright Infringment found then we will take action against it.
+        The content on our platform is protected by copyright, and its use for
+        commercial purposes on the internet or in any other way is strictly
+        prohibited. Our platform is designed to enhance the educational
+        prospects of students and does not permit any form of content mixing or
+        fraudulent activities. All files and algorithms are the intellectual
+        property of Code.iBlogger. In the event of any Copyright Infringement,
+        appropriate action will be taken.
       </p>
       <h2 class="page-header">DCMA</h2>
       <p>
-        Code.iBloger provides notes of computer science subject studied in
-        Panchayat College, Bargarh. We also share the practical records so that
-        student can not be suffered for practical findings.
+        Code.iBlogger provides computer science notes and practical records
+        related to the curriculum of Sambalpur University. In the event that we
+        have inadvertently used content that belongs to you or your
+        organization, we sincerely apologize for the oversight. We assure you
+        that such occurrences will not be repeated in the future.
       </p>
       <p>
-        If we have added some content that belong to you or your organization by
-        mistake, We are sorry for that. We apologize for that and assure you
-        that this wont be repeated in future. If you are rightful owner of the
-        content used in our Website, Please mail us with your Name, Organization
-        Name, Contact Details, Copyright infringing URL and Copyright Proof (URL
-        or Legal Document) at xyz@gmail.com
+        If you are the rightful owner of content featured on our website, kindly
+        contact us at codeiblogger@gmail.com with your Name, Organization Name, Contact
+        Details, Copyright infringing URL, and Copyright Proof (URL or Legal
+        Document). We pledge to promptly remove infringing content within 48
+        hours.
       </p>
       <p>
-        I assure you that, I will remove the infringing contentwithin 48 Hours.
+        We value your privacy and compliance with intellectual property rights.
+        This Privacy Policy reflects our dedication to maintaining a secure and
+        respectful online environment for all users of Code.iBlogger.
       </p>
       <br />
     </div>

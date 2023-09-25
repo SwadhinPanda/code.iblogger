@@ -1,49 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<meta name="description" content="Code.iBlogger provides programming concept and practical files" />
-	<meta name="keywords" content="Programming, Computer Science, CSPCB, Code.iBlogger, Program Files" />
-	<meta name="author" content="Swadhin Panda" />
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
-	 crossorigin="anonymous" />
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-	 crossorigin="anonymous">
-	</script>
-	<link rel="preconnect" href="https://fonts.googleapis.com" />
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-	<link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@600&family=Ceviche+One&family=Fredoka+One&family=Josefin+Slab:wght@600&family=Merriweather:ital@1&family=Montserrat:ital,wght@0,600;1,800&family=Ubuntu:wght@500&family=Poppins:wght@700&family=Lexend:wght@400;600&display=swap"
-	 rel="stylesheet" />
-	<script type="module" src="/script/template.js"></script>
-	<link rel="stylesheet" href="/style/style.css" />
-	<link rel="icon" type="image/x-icon" href="/img/fav.ico" />
-	<title>About - Code.iBlogger</title>
-</head>
-
-<body>
-	<nav class="navbar navbar-expand-lg navbar-light">
-		<div class="mx-4 container-fluid">
-			<img src="/img/icon.webp" alt="brand-icon" class="brand-icon" />
-        <a class="navbar-brand mx-1 fw-bold" href="/"
-          ><span class="cde">Code</span><span class="dot">.</span
-          ><span class="i">i</span><span class="ibg">Blogger</span></a
-        >
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Code.iBlogger provides programming concept and practical files"
+    />
+    <meta
+      name="keywords"
+      content="Programming, Computer Science, CSPCB, Code.iBlogger, Program Files"
+    />
+    <meta name="author" content="Swadhin Panda" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script type="module" src="/script/template.js"></script>
+    <link rel="stylesheet" href="/style/style.css" />
+    <link rel="icon" type="image/x-icon" href="/img/fav.ico" />
+    <title>About - Code.iBlogger</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg fixed-top pb-0" id="navSection">
+      <div class="mx-4 container-fluid">
+        <a class="navbar-brand fw-bold" href="#"
+          ><span class="cde">Code</span><span class="i">i</span
+          ><span class="ibg">Blogger</span></a>
         <button
           class="navbar-toggler"
+          id="nav-toggler"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent"
           aria-expanded="false"
           aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
+          style="padding: 2px 5px">
+          <span
+            class="navbar-toggler-icon"
+            style="width: 1.5rem; height: 1.5rem"
+          ></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-center">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <a class="nav-link" href="/">Home</a>
             </li>
@@ -53,16 +60,13 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/#subjects">Subjects</a>
+              <a class="nav-link" href="/subject/">Subjects</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/#faq">FAQs</a>
+              <a class="nav-link active" href="about.html">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/policy.html">Policy</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">About</a>
+              <a class="nav-link" href="policy.html">Policy</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="contact.html">Contact</a>
@@ -71,72 +75,83 @@
         </div>
       </div>
     </nav>
-    <div class="container px-4 pt-1 pb-2 bg-light bg-opacity-75 rounded-3 pages">
+    <div
+      class="container px-5 py-3 bg-light bg-opacity-75 rounded-3 pages">
       <h2 class="page-header">About Code.iBlogger</h2>
       <p>
-        Code.iBlogger is such a platform where a student can find and learn
-        programming concept and other subjects of Computer Science. In other way
-        we can say Code.iBlogger is a note sharing platform where a student can
-        learn programming and other computer subjects.
+        Code.iBlogger represents an exceptional educational platform
+        meticulously tailored to meet the dynamic needs of students aspiring to
+        conquer the realm of programming and diverse computer science subjects.
+        The platform is not merely a repository; it serves as a collaborative
+        space dedicated to fostering an enriching learning experience for
+        students across various disciplines within the field of computer
+        science.
       </p>
-      <h2 class="page-header">Aim</h2>
+      <h2 class="page-header">Comprehensive Subject Coverage</h2>
       <p>
-        We prioritized user experience and enhanced design of this website such
-        as navigating pages and subjects, colored text inside code box.
-        Code.iBlogger attemps to solve the problem of students who don't know
-        how to code a program or understand mathematical and logical problems.
+        Code.iBlogger covers a diverse range of subjects, including but not
+        limited to
+        <span class="fw-bold">
+          C, Digital Logic, C++, Data Structures, Java, Discrete Math, Database
+          Systems, Computer Networks, Operating Systems, Computer Graphics, and
+          more.</span>
+        This commitment to subject diversity ensures that learners have access
+        to a broad spectrum of knowledge essential for their academic and
+        professional growth.
       </p>
       <div>
-        <h2 class="page-header">Facility</h2>
-        <p>
-          Code.iBlogger provides simplest concept of programming language. Not
-          only programming languages but also other subjects of computer science
-          are available.
-        </p>
-        <p>
-          Subjects :-
-          <span class="fw-bold"
-            >C | Digital Logic | C++ | Data Structures | Java | Discrete Math |
-            Database Systems | Computer Networks | Operating Systems | Computer
-            Graphics
-          </span>
-          etc.
-        </p>
+        <h2 class="page-header">Key Features That Set the Platform Apart</h2>
         <h2 class="page-header fs-6 text-danger">
           1. Easy-to-Understand Notes
         </h2>
         <p>
-          Basically all student want to avail all notes corresponding to their
-          course. So here in Code.iBlogger, notes are easily available in the
-          theory section of a subject. Notes are written in simple and easy
-          language.
+          Code.iBlogger offers meticulously crafted notes tailored to each
+          subject, readily available in the theory section. These notes are
+          presented in simple and comprehensible language, ensuring that
+          students can easily grasp complex concepts.
         </p>
         <h2 class="page-header fs-6 text-danger">2. Examples & Practices</h2>
         <p>
-          Here, practice set and examples are given in each topic. After reading
-          one can practice it. Also there are some quizzes to solve and improve
-          programming skills.
+          The platform provides a plethora of practice sets and illustrative
+          examples for every topic. These resources empower students to
+          reinforce their understanding and apply their knowledge effectively.
+          Additionally, interactive quizzes are available to enhance programming
+          skills and facilitate a deeper grasp of the subject matter.
         </p>
         <h2 class="page-header fs-6 text-danger">3. Colorful Codes</h2>
         <p>
-          Unlike handwritten notes, Code.iBlogger is designed in such a way that
-          the programs look like vs-code type. A program consists of colorful
-          token according its syntax.
+          Departing from conventional handwritten notes, Code.iBlogger employs a
+          visually engaging approach. The platform is designed to present
+          programming code in a format reminiscent of VS Code. Each program is
+          enriched with colorful tokens corresponding to its syntax, creating an
+          immersive and visually stimulating learning experience.
         </p>
         <h2 class="page-header fs-6 text-danger">
           4. Downloadable Practical Files
         </h2>
         <p>
-          Anyone who needs files of source code can download easily. There are 2
-          type of files. One is normal notepad file. Another is respected to
-          programming language.
+          Recognizing the importance of practical learning, Code.iBlogger offers
+          downloadable source code files in two formats: a standard notepad file
+          and a format specific to the programming language. These files enable
+          students to delve into hands-on application and experimentation.
         </p>
       </div>
-<h2 class="page-header">Author</h2>
+      <h2 class="page-header">Meet the Author</h2>
       <p>
-        Code.iBlogger is developed by Swadhin Panda, Computer
-        Science Student at Panchayat College, Bargarh (Odisha). All copyrights
-        belong to owner of this website
+        Code.iBlogger is the brainchild of Swadhin Panda, a dedicated Computer
+        Science student at Panchayat College, Bargarh (Odisha). All copyrights
+        and intellectual property rights are vested in the owner of this
+        website, reflecting the passion and commitment behind this educational
+        endeavor.
+      </p>
+      <p>
+        In conclusion, Code.iBlogger transcends being a mere platform; it
+        embodies a commitment to empowering students with the tools and
+        knowledge needed to excel in the intricate world of programming and
+        computer science. Students are invited to embark on an educational
+        journey with Code.iBlogger, explore the vast array of subjects, and
+        unlock a world of limitless possibilities in the realm of technology and
+        innovation.
       </p>
       <br />
       <div class="container position-relative quote">

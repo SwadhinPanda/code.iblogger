@@ -35,26 +35,31 @@
     <title>Contact - Code.iBlogger</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar navbar-expand-lg fixed-top pb-0" id="navSection">
       <div class="mx-4 container-fluid">
-        <img src="/img/icon.webp" alt="brand-icon" class="brand-icon" />
-        <a class="navbar-brand mx-1 fw-bold" href="/"
-          ><span class="cde">Code</span><span class="dot">.</span
-          ><span class="i">i</span><span class="ibg">Blogger</span></a
+        <a class="navbar-brand fw-bold" href="/"
+          ><span class="cde">Code</span><span class="i">i</span
+          ><span class="ibg">Blogger</span></a
         >
         <button
           class="navbar-toggler"
+          id="nav-toggler"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent"
           aria-expanded="false"
           aria-label="Toggle navigation"
+          style="padding: 2px 5px"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span
+            class="navbar-toggler-icon"
+            style="width: 1.5rem; height: 1.5rem"
+          ></span>
         </button>
+
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-center">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <a class="nav-link" href="/">Home</a>
             </li>
@@ -64,84 +69,78 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/#subjects">Subjects</a>
+              <a class="nav-link" href="/subject/">Subjects</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/#faq">FAQs</a>
+              <a class="nav-link" href="about.html">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/policy.html">Policy</a>
+              <a class="nav-link" href="policy.html">Policy</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/about.html">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#"
-                >Contact</a
-              >
+              <a class="nav-link active" href="contact.html">Contact</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-
-    <!-- <div class="container px-4 pt-1 bg-light bg-opacity-75 rounded-3 pages"> -->
-      <!-- 
-      <div class="form-floating mb-2">
-        <input
-          type="text"
-          aria-label="Last name"
-          id="fname"
-          class="form-control"
-          placeholder="Enter Your Name"
-        />
-        <label for="fname">Enter Your Name</label>
-      </div>
-      <div class="form-floating mb-2">
-        <input
-          type="email"
-          class="form-control"
-          id="floatingInput"
-          placeholder="name@example.com"
-        />
-        <label for="floatingInput">Email address</label>
-        <div id="emailHelp" class="form-text">
-          We'll never share your email with anyone else.
-        </div>
-      </div>
-      <div class="form-floating mb-2">
-        <select
-          class="form-select"
-          id="floatingSelect"
-          aria-label="Floating label select"
-        >
-          <option selected>Just Contact</option>
-          <option value="1">Query</option>
-          <option value="2">Suggestion</option>
-          <option value="3">Other</option>
-        </select>
-        <label for="floatingSelect">Type</label>
-      </div>
-
-      <div class="form-floating">
-        <textarea
-          class="form-control"
-          placeholder="Leave a comment here"
-          id="floatingTextarea2"
-          style="height: 100px"
-        ></textarea>
-        <label for="floatingTextarea2">Message</label>
-      </div>
-    -->
-      <iframe
-        src="https://docs.google.com/forms/d/e/1FAIpQLSdad1Bd2ozIxSHMoUJJXrAlm6bsY5t3EX-oNEvs_sw6tJvTKQ/viewform?embedded=true"
-        frameborder="0"
-        marginheight="0"
-        marginwidth="0"
-        class="contact-form"
-        >Loading…</iframe
-      >
-    <!-- </div> -->
+    <div
+      class="container px-5 py-3 bg-light bg-opacity-75 rounded-3 pages"
+    >
+      <h2 class="page-header">Contact Us</h2>
+      <p>
+        If you have any questions or concerns regarding our Privacy Policy,
+        Copyright Disclaimer, or any other aspect of Code.iBlogger, we encourage
+        you to get in touch with us. Your feedback and inquiries are important
+        to us, and we are committed to providing you with the information and
+        assistance you need.
+      </p>
+      <h2 class="page-header">Contact Information</h2>
+      <p>
+        Email:
+        <a href="mailto:codeiblogger@gmail.com">codeiblogger@gmail.com</a>
+      </p>
+      <h2 class="page-header">Privacy Concerns</h2>
+      <p>
+        If you have concerns or questions related to our Privacy Policy or how
+        your personal information is handled on Code.iBlogger, please do not
+        hesitate to contact us. We take your privacy seriously and will respond
+        to your inquiries promptly.
+      </p>
+      <h2 class="page-header">Copyright Infringement</h2>
+      <p>
+        If you believe that your content has been used on Code.iBlogger without
+        proper attribution or authorization, we apologize for any oversight. To
+        report a copyright infringement or request the removal of content that
+        belongs to you or your organization, please provide the following
+        details in your email:
+      </p>
+      <ol>
+        <li>Your Name</li>
+        <li>Organization Name (if applicable)</li>
+        <li>Contact Details</li>
+        <li>Copyright Infringing URL on Code.iBlogger</li>
+        <li>Copyright Proof (URL or Legal Document)</li>
+      </ol>
+      <p>
+        We are committed to addressing copyright concerns expeditiously and will
+        take appropriate action to rectify any inadvertent use of copyrighted
+        material.
+      </p>
+      <h2 class="page-header">General Inquiries</h2>
+      <p>
+        For general inquiries, feedback, or questions related to our platform
+        and its content, feel free to contact us at the provided email address.
+        We value your input and strive to improve our platform to better serve
+        the educational needs of our users.
+      </p>
+      <p>
+        At Code.iBlogger, we are dedicated to maintaining a secure, respectful,
+        and informative online environment for all visitors. Your communication
+        with us is important, and we look forward to assisting you with any
+        inquiries or concerns you may have.
+      </p>
+    </div>
     <!-- Footer Sectioin -->
     <my-footer></my-footer>
   </body>
